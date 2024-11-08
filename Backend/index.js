@@ -7,7 +7,7 @@ const {prismaClient, PrismaClient} = require('@prisma/client')
 app.use(bodyparser.json())
 
 const corsOption = {
-     origin: 'http://localhost:4000/downloadBroucher', // Allow only this domain
+     origin: 'https://fnxdlfrontend-ecb5rtnuv-sandeeps-projects-fa54097d.vercel.app/', // Allow only this domain
      methods: ['GET', 'POST'], // Allow specific methods (optional)
      allowedHeaders: ['Content-Type', 'Authorization'], 
     }
