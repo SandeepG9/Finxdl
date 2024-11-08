@@ -5,7 +5,14 @@ const app = express()
 const db = require("./Dbconnection")
 const {prismaClient, PrismaClient} = require('@prisma/client')
 app.use(bodyparser.json())
-app.use(cors())
+
+const corsOption = {
+     origin: 'https://finxdl.onrender.com', // Allow only this domain
+     methods: ['GET', 'POST'], // Allow specific methods (optional)
+     allowedHeaders: ['Content-Type', 'Authorization'], 
+    }
+
+app.use(cors(corsOption))
 
 async function createUser(userData)
 {
