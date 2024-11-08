@@ -2,10 +2,8 @@ const express = require('express')
 const bodyparser =  require('body-parser')
 const cors = require('cors')
 const app = express()
-const db = require('./Dbconnection.js')
+const db = require("./Dbconnection")
 const {prismaClient, PrismaClient} = require('@prisma/client')
-
-
 app.use(bodyparser.json())
 app.use(cors())
 

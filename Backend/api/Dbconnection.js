@@ -10,4 +10,4 @@ const {Client} = require('pg')
 
 client.connect()
 .then(()=>{console.log("connected to db")})
-.catch((err)=>console.log("something went wrong"));
+.catch((err)=>console.log("somethsasasing went wrong",err));
