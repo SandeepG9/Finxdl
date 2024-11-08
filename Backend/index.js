@@ -7,7 +7,7 @@ const {prismaClient, PrismaClient} = require('@prisma/client')
 app.use(bodyparser.json())
 
 const corsOption = {
-     origin: 'https://fnxdlfrontend.vercel.app/', // Allow only this domain
+     origin: 'https://fnxdlfrontend.vercel.app', // Allow only this domain
      methods: ['GET', 'POST'], // Allow specific methods (optional)
      allowedHeaders: ['Content-Type', 'Authorization'], 
     }
