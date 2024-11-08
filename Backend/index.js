@@ -17,6 +17,7 @@ async function createUser(userData)
 {
     if(userData.firstName==="" ||userData.email===""||userData.lastName===""||userData.phone===""||userData.graduationYear===""||userData.city==="")
     {
+        console.log("jshgaj")
         return 0
     }
     else{
@@ -43,7 +44,6 @@ app.post('/downloadBroucher',(req,res)=>{
     else{
         res.status(401).json({message:"Field is empty"})
     }
-    res.status(404).json({message:"something went wrong"})
 })
 
 app.listen(4000,()=>{
